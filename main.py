@@ -56,8 +56,11 @@ def main():
     # Temperature setting
     temperature = st.slider("Model Temperature:", 0.0, 1.0, 0.7, 0.1)
 
+    # Session state to hold the input text
+    if "current_input" not in st.session_state:
+        st.session_state.current_input = "The best thing of AI is its ability to"
     # Input text
-    input_text = st.text_area("Enter your text below:", "The best thing of AI is its ability to")
+    input_text = st.text_area("Enter your text below:", st.session_state.current_input) #"The best thing of AI is its ability to")
 
     if st.button("Generate Next Words"):
         if input_text.strip():
