@@ -47,6 +47,8 @@ def main():
     st.write("""
     This application demonstrates the autoregressive mechanism in Large Language Models (LLM) by predicting the next word(s) based on a given input text.
     """)
+    st.write('Source code and ⭐ at [GitHub](https://github.com/jismartin/nextw)','  Author: jisantos')
+    st.divider()
 
     # Number of words to predict
     num_words = st.slider("Number of words to predict:", 1, 20, 5)
