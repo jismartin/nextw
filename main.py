@@ -45,7 +45,7 @@ def main():
     st.subheader("Autoregression Demonstration")
 
     st.write("""
-    This application demonstrates the autoregressive mechanism in Large Language Models (LLM) by predicting the next word(s) based on a given input text.
+    This application demonstrates the autoregressive mechanism of a foundational LLM by predicting the next word(s) based on input text.
     """)
     st.write('Source code and ⭐ at [GitHub](https://github.com/jismartin/nextw)','  Author: jisantos')
     st.divider()
